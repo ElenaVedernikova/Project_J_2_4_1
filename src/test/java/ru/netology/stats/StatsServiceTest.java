@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StatsServiceTest {
     @Test
-    void SumSales() {
+    void sumSales() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
 
-        long actual = service.SumSales(sales);
+        long actual = service.sumSales(sales);
 
         assertEquals(expected, actual);
     }
@@ -57,26 +57,26 @@ class StatsServiceTest {
     }
 
     @Test
-    void MinAvgSumSales() {
+    void minAvgSumSales() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
-        long actual = service.MinAvgSumSales(sales);
+        long actual = service.minAvgSumSales(sales);
 
         assertEquals(expected, actual);
 
     }
 
     @Test
-    void MaxAvgSumSales() {
+    void maxAvgSumSales() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
-        long actual = service.MaxAvgSumSales(sales);
+        long actual = service.maxAvgSumSales(sales);
 
         assertEquals(expected, actual);
 
